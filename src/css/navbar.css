@@ -1,0 +1,14 @@
+.navbar-container {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0rem;
+    background-color: blue;
+}
+.menu-container {
+    display: inline-block;
+    float: left;
+}

@@ -1,0 +1,38 @@
+.project-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project-container::after {
+    
+}
+.project-mainContent {
+    width: min-content;
+    border: 2px solid green;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.project-mainContent::before {
+    content: '';
+    position: absolute;
+    background-color: darkslateblue;
+    border-radius: 50%;
+}
+@media screen and (max-width:650px) {
+    .project-mainContent::before {
+        width: 20px;
+        height: 20px;
+        background-color: darkslateblue;
+        border-radius: 50%;
+        left: -13px;
+        top: 5px;
+    }
+    .project-container{
+        display: block;
+        border-left: 6px solid green;
+        height: 100%;
+    }
+}
